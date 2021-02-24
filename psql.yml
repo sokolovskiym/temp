@@ -1,5 +1,5 @@
 ---
-- hosts: databases
-  sudo: true
+- hosts: all #databases
+  become: yes
   roles:
     - psql
